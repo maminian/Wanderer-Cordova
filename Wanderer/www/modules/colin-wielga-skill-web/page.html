@@ -32,7 +32,7 @@
         </div>
         <div>
             Could be helped by:
-            <span class="clickable-text" data-ng-repeat="couldAdd in module.couldBeHelpedBy(skill.name)">
+            <span id="nuchbox" class="clickable-text" data-ng-repeat="couldAdd in module.couldBeHelpedBy(skill.name)">
                 <span data-ng-click="module.connect(couldAdd,skill.name)" >{{couldAdd}}</span>
             </span>  
         </div>

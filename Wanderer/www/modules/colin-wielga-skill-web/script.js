@@ -126,6 +126,14 @@ ColinWielgaSkillWeb.component = function () {
         this.network.skills.push(ColinWielgaSkillWeb.MakeSkill(newSkill, 1, 1));
     }
 
+    this.getElementById("nuchbox")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("nuchbutton").click();
+    }
+    
+    
     this.remove = function (skill) {
         var newSkills = [];
         this.network.skills.forEach(function (someSkill) {
